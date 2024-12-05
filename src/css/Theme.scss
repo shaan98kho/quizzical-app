@@ -1,0 +1,80 @@
+.App-header {
+    .day & {
+        color: white;
+        background-color: #282c34;
+    }
+}
+
+.App-link {
+    .day & {
+        color: #61dafb;
+    }
+}
+
+/* ========================= DEFAULT END ============================== */
+.day {
+    &::before {
+        background: #fffad1;
+    }
+
+    &::after {
+        background: #deebf8;
+    }
+}
+
+.quiz-landing {
+    .day & {
+        color: #293264;
+    }
+}
+
+.question-wrap {
+    .day & {
+        border-bottom: 1px solid #DBDEF0;
+    }
+}
+
+.answer {
+    .day & {
+        border: 1px solid #293264;
+        color: #293264;
+
+        &.active {
+            border: 1px solid #D6DBF5;
+            background: #D6DBF5;
+        }
+
+        &.answer-incorrect {
+            background: #F8BCBC;
+            opacity: 0.55;
+        }
+
+        &.answer-correct {
+            background: #94D7A2;
+        }
+
+        &.answer-unselected {
+            border: 1px solid #4D5B9E;
+            color: #293264;
+            opacity: 0.55;
+        }
+
+
+
+    }
+}
+
+.result {
+    .day & {
+        color: #293264;
+    }
+}
+
+.button {
+    .day & {
+        color: #F5F7FB;
+        background: #4D5B9E;
+        border: none;
+        outline: none;
+    }
+}

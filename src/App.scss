@@ -1,0 +1,146 @@
+.App {
+    text-align: center;
+  }
+  
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  padding: 0 75px;
+
+  &::before {
+      content: "";
+      position: fixed;
+      right: -120px;
+      top: -70px;
+      width: 297px;
+      height: 235px;
+      border-radius: 50%;
+      z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    width: 300px;
+    height: 240px;
+    clip-path: path(
+      "M60,20 C100,0 200,0 240,40 
+      C280,80 280,160 240,200 
+      C200,240 100,240 60,200 
+      C20,160 20,80 60,20 Z"
+    );
+    left: -80px;
+    bottom: -60px;
+    z-index: -1;
+  }
+}
+
+.quiz-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.question-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
+
+  h4 {
+    margin-top: 0;
+  }
+}
+
+.question-txt {
+  padding-bottom: 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.answers-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 500;
+  margin: 0 0 4px 12px;
+  padding: 4px 20px;
+  min-width: 75px;
+  height: 21px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: 35px;
+  padding: 12px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
